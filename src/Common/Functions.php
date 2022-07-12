@@ -1,8 +1,8 @@
 <?php
 
-namespace Dgd\ExamplePlugin\Common;
+namespace Dgd\FilterByParent\Common;
 
-use Dgd\ExamplePlugin\Common\Abstracts\Base;
+use Dgd\FilterByParent\Common\Abstracts\Base;
 
 /**
  * Main function class for external uses
@@ -12,8 +12,4 @@ use Dgd\ExamplePlugin\Common\Abstracts\Base;
  */
 class Functions extends Base
 {
-	public function getExampleGlobal()
-	{
-		return $this->plugin->exampleGlobal();
-	}
 }

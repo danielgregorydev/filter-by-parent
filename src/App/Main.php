@@ -1,22 +1,14 @@
 <?php
 
-namespace Dgd\ExamplePlugin\App;
+namespace Dgd\FilterByParent\App;
 
-use Dgd\ExamplePlugin\App\Models\Example;
-use Dgd\ExamplePlugin\App\Views\Admin\UserProfile;
+use Dgd\FilterByParent\App\Views\Admin\EditPage;
 
 class Main
 {
 	public function init()
 	{
-		$example = new Example();
-		$example->init();
-
-		/**
-		 * Views
-		 */
-
-		$profile = new UserProfile();
-		$profile->init();
+		$editPage = new EditPage();
+		$editPage->init();
 	}
 }

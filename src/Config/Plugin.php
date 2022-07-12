@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Dgd\ExamplePlugin\Config;
+namespace Dgd\FilterByParent\Config;
 
-use Dgd\ExamplePlugin\Common\Traits\Singleton;
+use Dgd\FilterByParent\Common\Traits\Singleton;
 
 /**
  * Plugin data used throughout the plugin, most of them are defined
@@ -12,7 +12,7 @@ use Dgd\ExamplePlugin\Common\Traits\Singleton;
  * that extends the Base abstract class
  *
  * @see Base
- * @package ThePluginName\Config
+ * @package FilterByParent\Config
  * @since 1.0.0
  */
 final class Plugin
@@ -22,7 +22,7 @@ final class Plugin
 	public function data(): array
 	{
 		return [
-			'plugin_path' => untrailingslashit(plugin_dir_path(CUSTOM_MEMBER_ID_PLUGIN_FILE)),
+			'plugin_path' => untrailingslashit(plugin_dir_path(FILTER_BY_PARENT_PLUGIN_FILE)),
 			'plugin_template_folder' => 'templates',
 		];
 	}
@@ -30,10 +30,5 @@ final class Plugin
 	public function templatePath(): string
 	{
 		return $this->data()['plugin_path'] . '/' . $this->data()['plugin_template_folder'];
-	}
-
-	public function exampleGlobal(): string
-	{
-		return 'example';
 	}
 }

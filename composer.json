@@ -1,5 +1,5 @@
 {
-    "name": "dgd/exampleplugin",
+    "name": "dgd/filterbyparent",
     "type": "package",
     "authors": [
         {
@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Dgd\\ExamplePlugin\\": "src/"
+            "Dgd\\FilterByParent\\": "src/"
         }
     },
     "require": {

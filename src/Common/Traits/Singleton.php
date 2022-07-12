@@ -1,11 +1,11 @@
 <?php
 
-namespace Dgd\ExamplePlugin\Common\Traits;
+namespace Dgd\FilterByParent\Common\Traits;
 
 /**
  * The singleton skeleton trait to instantiate the class only once
  *
- * @package ThePluginName\Common\Traits
+ * @package FilterByParent\Common\Traits
  * @since 1.0.0
  */
 trait Singleton

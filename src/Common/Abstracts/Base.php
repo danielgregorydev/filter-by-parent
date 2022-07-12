@@ -1,8 +1,8 @@
 <?php
 
-namespace Dgd\ExamplePlugin\Common\Abstracts;
+namespace Dgd\FilterByParent\Common\Abstracts;
 
-use Dgd\ExamplePlugin\Config\Plugin;
+use Dgd\FilterByParent\Config\Plugin;
 
 abstract class Base
 {
