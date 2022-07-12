@@ -1,0 +1,33 @@
+{
+    "name": "dgd/exampleplugin",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Daniel Gregory",
+            "email": "danny@danielgregory.dev"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dgd\\ExamplePlugin\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "phpunit/phpunit": "^9.5",
+        "yoast/phpunit-polyfills": "^1.0",
+        "php-stubs/wordpress-tests-stubs": "^5.8",
+        "spatie/phpunit-watcher": "^1.23"
+    },
+    "scripts": {
+        "lint": [
+            "phpcs --ignore=vendor,resources --extensions=php --standard=PSR12 ."
+        ],
+        "test": [
+            "phpunit-watcher watch"
+        ]
+    }
+}
