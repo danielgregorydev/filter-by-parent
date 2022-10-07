@@ -10,7 +10,7 @@ if (!defined('FILTER_BY_PARENT_PLUGIN_FILE')) {
  * Plugin Name: Filter By Parent
  * Description: Filter content by post parent
  * Author: Daniel Gregory
- * Version: 0.0.1
+ * Version: 0.0.2
  */
 
 require_once(plugin_dir_path(__FILE__) . '/vendor/autoload.php');
